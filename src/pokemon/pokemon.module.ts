@@ -12,6 +12,10 @@ import { Pokemon, PokemonSchema } from './entities/pokemon.entity';
       name: Pokemon.name, //el name es la propiedad de la clase no el atributo
       schema: PokemonSchema
     }])
+  ],
+  exports: [
+    MongooseModule
   ]
+  
 })
 export class PokemonModule {}
